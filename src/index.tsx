@@ -9,4 +9,3 @@ window.onload = () => {
     console.log(domContainer);
     ReactDOM.render(<Cv/>, domContainer);
 }
-

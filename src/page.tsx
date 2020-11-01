@@ -11,7 +11,7 @@ const Header = () => {
             <section className="contact-list">
                 <div className="contact-list__item">
                     <img/>
-                    <span></span>
+                    <span>noeliapereira@protonmail.com</span>
                 </div>
             </section>
         </div>
