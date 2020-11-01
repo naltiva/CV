@@ -20,8 +20,38 @@ const Header = () => {
 
 const Content =() => {
     return (
-        <div className="column--left">
+        <div className="content">
+            <ColumnLeft/>
+            <ColumnRight/>
+        </div> 
+    )
+}
 
+const ColumnLeft =() => {
+    return (
+        <div className="column--left">
+            <div className="column--left__experience">
+
+            </div>
+            <div className="column--left__education">
+
+            </div>
+        </div> 
+    )
+}
+
+const ColumnRight =() => {
+    return (
+        <div className="column--right">
+            <div className="skils">
+
+            </div>
+            <div className="column--right__language">
+
+            </div>
+            <div className="column--right__interests">
+
+            </div>
         </div> 
     )
 }
