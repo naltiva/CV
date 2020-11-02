@@ -6,13 +6,18 @@ const Header = () => {
             <section className="presentation">
                 <h1>Noelia Pereira</h1>
                 <h2>Title</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur, vel placeat qui saepe, iusto doloribus porro aliquam voluptatem quod nesciunt cum laboriosam! Qui vero, est quam aliquid voluptas ipsum!</p>
+                <p className="presentation__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur, vel placeat qui saepe, iusto doloribus porro aliquam voluptatem quod nesciunt cum laboriosam! Qui vero, est quam aliquid voluptas ipsum!</p>
             </section>
             <section className="contact-list">
-                <div className="contact-list__item">
-                    <img/>
-                    <span>noeliapereira@protonmail.com</span>
-                </div>
+                    <div className="contact-list__item">
+                        <img className="icon" src="../static/mail.png" alt="mail"/><span className="contact-list__item__span">noeliapereira@protonmail.com</span>
+                    </div>
+                    <div className="contact-list__item">
+                        <img className="icon" src="../static/mobile-phone.png" alt="phone"/><span className="contact-list__item__span">0729255xxxx</span>                        
+                    </div>
+                    <div className="contact-list__item">
+                        <img className="icon" src="../static/linkedin.png" alt="linkedin"/><span className="contact-list__item__span">linkedin</span>
+                    </div>
             </section>
         </div>
     )
