@@ -23,21 +23,48 @@ const Header = () => {
     )
 }
 
-const Content =() => {
+
+
+const Experience = (props) => {
     return (
-        <div className="content">
-            <ColumnLeft/>
-            <ColumnRight/>
-        </div> 
-    )
+        <div>
+            <div>
+                <span className="column--left__title">{props.title}</span><span className="column--left__date">{props.dates}</span>
+            </div>
+            <div>
+                <p className="column--left__place">{props.place}</p>
+            </div>
+            <div>
+                {props.children}
+            </div>
+        </div>
+    );
 }
 
 const ColumnLeft =() => {
     return (
         <div className="column--left">
             <div className="column--left__experience">
-
+                <h2 className="dot-line">Experience</h2>
+                <Experience title="Title" place="Group - Institution -Location" dates="2019-2020">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente excepturi amet suscipit temporibus repudiandae, reprehenderit rem deserunt ducimus at maxime dolores optio nam ea molestiae dolorem saepe voluptatum nesciunt?</p>
+                </Experience>
+                <Experience title="One More" place="My house" dates="never">
+                    <p>One</p>
+                    <ul>
+                        <li>One</li>
+                        <li>Two</li>
+                        <li>Three</li>
+                    </ul>
+                </Experience>
+                <Experience title="Title" place="Group - Institution -Location" dates="2019-2020">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente excepturi amet suscipit temporibus repudiandae, reprehenderit rem deserunt ducimus at maxime dolores optio nam ea molestiae dolorem saepe voluptatum nesciunt?</p>
+                </Experience>
+                <Experience title="Title" place="Group - Institution -Location" dates="2019-2020">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente excepturi amet suscipit temporibus repudiandae, reprehenderit rem deserunt ducimus at maxime dolores optio nam ea molestiae dolorem saepe voluptatum nesciunt?</p>
+                </Experience>
             </div>
+            
             <div className="column--left__education">
 
             </div>
@@ -45,11 +72,12 @@ const ColumnLeft =() => {
     )
 }
 
+
 const ColumnRight =() => {
     return (
         <div className="column--right">
             <div className="skils">
-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quasi, exercitationem iure, hic eius expedita dignissimos eos deserunt neque molestiae libero, pariatur voluptates blanditiis? Ratione quod recusandae distinctio maxime a?</p>
             </div>
             <div className="column--right__language">
 
@@ -67,6 +95,15 @@ const Cv = () => {
             <Header/>
             <Content/>
         </div>
+    )
+}
+
+const Content =() => {
+    return (
+        <div className="content">
+            <ColumnLeft/>
+            <ColumnRight/>
+        </div> 
     )
 }
 

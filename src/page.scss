@@ -3,6 +3,9 @@
     margin: auto;
 }
 
+// HEADER
+// ------------
+
 .header {
     width: 100%;
     padding: 1rem;
@@ -34,15 +37,52 @@
     }
 }
 
-
-
 .icon {
     width: 1.5rem;
     height: auto;
     margin-right: 0.5rem;
 }
 
-.m0 {
-    margin: 0rem;
+// CONTENT
+// ----------
+
+.content{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
+.column--left {
+    padding-right: 1rem;
+    flex: 1;
+    flex-grow: 5;
+    // &__experience {
+        
+    // }
+    // &__education {
+    // }
+       
+    &__title {
+        font-weight: bold;
+    }
+    &__date {
+        font-style: italic;
+        margin-left: 1rem;
+    }
+    &__place {
+        font-weight: lighter;
+    }
+}
+
+.column--right{
+    flex: 2;
+    flex-grow: 2;
+}
+
+.dot-line {
+    border-bottom: dotted;
+    border-color: gainsboro;
+}
