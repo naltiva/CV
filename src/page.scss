@@ -86,3 +86,61 @@
     border-bottom: dotted;
     border-color: gainsboro;
 }
+
+.dotbar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    &__text {
+        align-self: flex-start;
+        flex-grow: 1;
+    };
+    &__dots {
+            align-self: flex-start;
+            flex-grow: 1;
+        &__dot { 
+            height: 15px;
+            width: 15px;
+            background-color: rgb(107, 110, 109);
+            border-radius: 50%;
+            display: inline-block;
+
+            &--inactive {
+                @extend .dotbar__dots__dot;
+                background-color: #bbb;
+            };
+        };
+    };
+    &__procentage {
+        align-self: flex-start;
+        flex-grow: 1;
+    };
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    &__item {
+        width: 4rem;
+        height: auto;
+    };
+    &__icon {
+        width: 100%;
+        // height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__text {
+            width: 100%;
+            text-align: center;
+            font-size: smaller;
+            display: inline-block;
+        }
+    }
+}
+
+  
