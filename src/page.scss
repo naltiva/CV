@@ -59,12 +59,9 @@
     padding-right: 1rem;
     flex: 1;
     flex-grow: 5;
-    // &__experience {
-        
-    // }
-    // &__education {
-    // }
-       
+}
+
+.role-header {       
     &__title {
         font-weight: bold;
     }
@@ -82,7 +79,7 @@
     flex-grow: 2;
 }
 
-.dot-line {
+.header-section{
     border-bottom: dotted;
     border-color: gainsboro;
 }

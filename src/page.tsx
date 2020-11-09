@@ -29,10 +29,10 @@ const Experience = (props) => {
     return (
         <div>
             <div>
-                <span className="column--left__title">{props.title}</span><span className="column--left__date">{props.dates}</span>
+                <span className="role-header__title">{props.title}</span><span className="role-header__date">{props.dates}</span>
             </div>
             <div>
-                <p className="column--left__place">{props.place}</p>
+                <p className="role-header__place">{props.place}</p>
             </div>
             <div>
                 {props.children}
@@ -45,7 +45,7 @@ const ColumnLeft =() => {
     return (
         <div className="column--left">
             <div className="column--left__experience">
-                <h2 className="dot-line">Experience</h2>
+                <h2 className="header-section">Experience</h2>
                 <Experience title="Title" place="Group - Institution -Location" dates="2019-2020">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente excepturi amet suscipit temporibus repudiandae, reprehenderit rem deserunt ducimus at maxime dolores optio nam ea molestiae dolorem saepe voluptatum nesciunt?</p>
                 </Experience>
