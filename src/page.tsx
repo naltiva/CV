@@ -73,17 +73,17 @@ const ColumnLeft =() => {
 }
 
 const DotBar = (props) => {
+    const dots = [];
+    for(let i = 0; i < 5; i++) {
+        dots.push(<span className={`dotbar__dots__dot${i < props.score ? "--active" : ""}`}/>)
+    }
+
     return (
         <div className="dotbar">
             <span className="dotbar__text">{props.idiom}</span>
             <div className="dotbar__dots">
-                <span className="dotbar__dots__dot--active"/>
-                <span className="dotbar__dots__dot--active"/>
-                <span className="dotbar__dots__dot--active"/>
-                <span className="dotbar__dots__dot--active"/>
-                <span className="dotbar__dots__dot"/>
+                {dots}
             </div>
-            <span className="dotbar__percentage">{props.percentage}</span>
         </div>
     )
 }
@@ -92,7 +92,7 @@ const ColumnRight =() => {
     return (
         <div className="column--right">
             <div className="column--right__skills">
-                <h2 className="dot-line">Skills</h2>   
+                <h2 className="section-header">Skills</h2>   
                 <ul>
                     <li>Libero</li>
                     <li>Adipisicing liit</li>
@@ -101,13 +101,13 @@ const ColumnRight =() => {
                 </ul>
             </div>
             <div className="column--right__language">
-                <h2 className="dot-line">Languages</h2>
-                <DotBar idiom="English" percentage="50%"/>
-                <DotBar idiom="Spanish" percentage="100%"/>  
-                <DotBar idiom="Galician" percentage="100%"/>
+                <h2 className="section-header">Languages</h2>
+                <DotBar idiom="English" score={2} />
+                <DotBar idiom="Spanish" score={5}/>  
+                <DotBar idiom="Galician" score={4}/>
             </div>
             <div className="column--right__interests">
-                <h2 className="dot-line">Hobbies</h2>
+                <h2 className="section-header">Hobbies</h2>
                 <div className="hobbies">
                     <div className="hobbies__item">
                         <img className="hobbies__icon" src="../static/dance.png" alt="dance"/><span className="hobbies__icon__text">Dance</span>

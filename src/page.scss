@@ -92,10 +92,10 @@
     &__text {
         align-self: flex-start;
         flex-grow: 1;
+        min-width: 6rem;
     };
     &__dots {
-            align-self: flex-start;
-            flex-grow: 1;
+            align-self: flex-end;
         &__dot { 
             height: 15px;
             width: 15px;
@@ -109,10 +109,6 @@
                 background-color: rgb(107, 110, 109);
             };
         };
-    };
-    &__percentage {
-        align-self: flex-start;
-        flex-grow: 1;
     };
 }
 
