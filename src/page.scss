@@ -99,17 +99,18 @@
         &__dot { 
             height: 15px;
             width: 15px;
-            background-color: rgb(107, 110, 109);
+            background-color: #bbb;
             border-radius: 50%;
             display: inline-block;
+            margin:0.1rem;
 
-            &--inactive {
+            &--active {
                 @extend .dotbar__dots__dot;
-                background-color: #bbb;
+                background-color: rgb(107, 110, 109);
             };
         };
     };
-    &__procentage {
+    &__percentage {
         align-self: flex-start;
         flex-grow: 1;
     };

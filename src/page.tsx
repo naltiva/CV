@@ -77,13 +77,13 @@ const DotBar = (props) => {
         <div className="dotbar">
             <span className="dotbar__text">{props.idiom}</span>
             <div className="dotbar__dots">
+                <span className="dotbar__dots__dot--active"/>
+                <span className="dotbar__dots__dot--active"/>
+                <span className="dotbar__dots__dot--active"/>
+                <span className="dotbar__dots__dot--active"/>
                 <span className="dotbar__dots__dot"/>
-                <span className="dotbar__dots__dot"/>
-                <span className="dotbar__dots__dot"/>
-                <span className="dotbar__dots__dot"/>
-                <span className="dotbar__dots__dot--inactive"/>
             </div>
-            <span className="dotbar__porcentage">{props.porcentage}</span>
+            <span className="dotbar__percentage">{props.percentage}</span>
         </div>
     )
 }
