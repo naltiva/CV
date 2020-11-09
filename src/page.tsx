@@ -102,9 +102,9 @@ const ColumnRight =() => {
             </div>
             <div className="column--right__language">
                 <h2 className="dot-line">Languages</h2>
-                <DotBar idiom="English" porcentage="50%"/>
-                <DotBar idiom="Spanish" porcentage="100%"/>  
-                <DotBar idiom="Galician" porcentage="100%"/>
+                <DotBar idiom="English" percentage="50%"/>
+                <DotBar idiom="Spanish" percentage="100%"/>  
+                <DotBar idiom="Galician" percentage="100%"/>
             </div>
             <div className="column--right__interests">
                 <h2 className="dot-line">Hobbies</h2>
