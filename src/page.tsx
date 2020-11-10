@@ -66,7 +66,15 @@ const ColumnLeft =() => {
             </div>
             
             <div className="column--left__education">
-
+                <h2 className="section-header">Education</h2>
+                <Experience 
+                    title="Master in Molecular Genetis & Biotechnology: Genetics" 
+                    place="University of Seville - Seville, Spain" 
+                    dates="2020"></Experience>
+                <Experience 
+                    title="Chemistry: University of Santiago de Compostela" 
+                    place="USC - Santiago de Compostela, Spain" 
+                    dates="2016"></Experience>
             </div>
         </div> 
     )
