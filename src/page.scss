@@ -24,9 +24,18 @@
         padding-right: 1rem;
         text-align: justify;
     }
+    &__name {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    &__title{
+        margin-top: 0;
+        font-weight: 400;
+    }
 }
 
 .contact-list {
+    margin-bottom: 2rem;
     flex-basis: auto;
     flex-grow:2;
     justify-content: flex-end;
@@ -45,9 +54,7 @@
     margin-right: 0.5rem;
 }
 
-.name {
-    font-size: 3rem;
-}
+
 
 // CONTENT
 // ----------

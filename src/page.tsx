@@ -4,20 +4,8 @@ const Header = () => {
     return (
         <div className="header">
             <section className="presentation">
-                <h1 className="name">Noelia Pereira</h1>
-                <h2>Title</h2>
-                <p className="presentation__text">My name is Noelia, I originally started with a bachelor in chemistry, by its third year I found myself focusing mainly on biochemistry and other biology related subjects, my end of bachelor project was on molecular labeling on bacterial organisms. I found this last project quite intriguing so I decided to my master’s in molecular genetics and biotechnology. Over this period I developed a keen interest in nutrition and microbiome and I managed to join Fred Warren’s group in the Quadram Institute to work on identifying how digestion affects psyllium. During the time working in Fred’s group I had a high degree of autonomy and did both experiment and protocol design, experiment runs and data analysis.</p>
-            </section>
-            <section className="contact-list">
-                    <div className="contact-list__item">
-                        <img className="icon" src="../static/mail.png" alt="mail"/><span className="contact-list__item__span">noeliapereira@protonmail.com</span>
-                    </div>
-                    <div className="contact-list__item">
-                        <img className="icon" src="../static/mobile-phone.png" alt="phone"/><span className="contact-list__item__span">07493915259</span>                        
-                    </div>
-                    <div className="contact-list__item">
-                        <img className="icon" src="../static/linkedin.png" alt="linkedin"/><span className="contact-list__item__span">linkedin</span>
-                    </div>
+                <h1 className="presentation__name">Noelia Pereira</h1>
+                <h2 className="presentation__title">Researcher</h2>
             </section>
         </div>
     )
@@ -44,6 +32,9 @@ const Experience = (props) => {
 const ColumnLeft =() => {
     return (
         <div className="column--left">
+            <section>
+                <p className="presentation__text">My name is Noelia, I originally started with a bachelor in chemistry, by its third year I found myself focusing mainly on biochemistry and other biology related subjects, my end of bachelor project was on molecular labeling on bacterial organisms. I found this last project quite intriguing so I decided to my master’s in molecular genetics and biotechnology. Over this period I developed a keen interest in nutrition and microbiome and I managed to join Fred Warren’s group in the Quadram Institute to work on identifying how digestion affects psyllium. During the time working in Fred’s group I had a high degree of autonomy and did both experiment and protocol design, experiment runs and data analysis.</p>
+            </section>
             <div className="column--left__experience">
                 <h2 className="section-header">Experience</h2>
                 <Experience title="Master capstone project" place="Quadram Institute, Norwich, UK" dates="2/2020 to 7/2020">
@@ -82,20 +73,6 @@ const ColumnLeft =() => {
                     </div>
                 </Experience>
             </div>
-
-            <div className="column--left__education">
-                <h2 className="section-header">Education</h2>
-                <Experience 
-                    title="Master in Molecular Genetis & Biotechnology: Genetics" 
-                    place="University of Seville - Seville, Spain" 
-                    dates="2020">
-                </Experience>
-                <Experience 
-                    title="Chemistry: University of Santiago de Compostela" 
-                    place="USC - Santiago de Compostela, Spain" 
-                    dates="2016"> 
-                </Experience>
-            </div>
         </div> 
     )
 }
@@ -119,6 +96,18 @@ const DotBar = (props) => {
 const ColumnRight =() => {
     return (
         <div className="column--right">
+            <section className="contact-list">
+                    <div className="contact-list__item">
+                        <img className="icon" src="../static/mail.png" alt="mail"/><span className="contact-list__item__span">noeliapereira@protonmail.com</span>
+                    </div>
+                    <div className="contact-list__item">
+                        <img className="icon" src="../static/mobile-phone.png" alt="phone"/><span className="contact-list__item__span">07493915259</span>                        
+                    </div>
+                    <div className="contact-list__item">
+                        <img className="icon" src="../static/linkedin.png" alt="linkedin"/><span className="contact-list__item__span">linkedin</span>
+                    </div>
+            </section>
+
             <div className="column--right__skills">
                 <h2 className="section-header">Skills</h2>   
                 <ul>
@@ -158,6 +147,20 @@ const ColumnRight =() => {
                         <img className="hobbies__icon" src="../static/hiking.png" alt="hiking"/><span className="hobbies__icon__text">Hike</span>
                     </div>
                 </div>
+            </div>
+
+            <div className="education">
+                <h2 className="section-header">Education</h2>
+                <Experience 
+                    title="Master in Molecular Genetis & Biotechnology: Genetics" 
+                    place="University of Seville - Seville, Spain" 
+                    dates="2020">
+                </Experience>
+                <Experience 
+                    title="Chemistry: University of Santiago de Compostela" 
+                    place="USC - Santiago de Compostela, Spain" 
+                    dates="2016"> 
+                </Experience>
             </div>
         </div> 
     )
