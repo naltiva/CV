@@ -139,9 +139,9 @@ const ColumnRight =() => {
             </div>
             <div className="column--right__language">
                 <h2 className="section-header">Languages</h2>
-                <DotBar idiom="English" score={2} />
+                <DotBar idiom="English" score={3} />
                 <DotBar idiom="Spanish" score={5}/>  
-                <DotBar idiom="Galician" score={4}/>
+                <DotBar idiom="Galician" score={5}/>
             </div>
             <div className="column--right__interests">
                 <h2 className="section-header">Hobbies</h2>
