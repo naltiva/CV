@@ -20,7 +20,26 @@ const Experience = (props) => {
                 <span className="role-header__title">{props.title}</span>
             </div>
             <div>
-                <span className="role-header__place">{props.place}</span><span className="role-header__date">{props.dates}</span>
+                <span className="role-header__place">{props.place}</span><span className="role-header__date"> – </span><span className="role-header__date">{props.dates}</span>
+            </div>
+            <div>
+                {props.children}
+            </div>
+        </div>
+    );
+}
+
+const Education = (props) => {
+    return (
+        <div>
+            <div>
+                <span className="education__title">{props.title}</span>
+            </div>
+            <div>
+                <span className="education__place">{props.place}</span>
+            </div>
+            <div>
+                <span className="education__date">{props.dates}</span>
             </div>
             <div>
                 {props.children}
@@ -37,39 +56,39 @@ const ColumnLeft =() => {
             </section>
             <div className="column--left__experience">
                 <h2 className="section-header">Experience</h2>
-                <Experience title="Master capstone project" place="Quadram Institute, Norwich, UK" dates="2/2020 to 7/2020">
+                <Experience title="Researche associate" place="Quadram Institute, Norwich, UK" dates="2/2020 to 7/2020">
                     <div className="role-header--description">
-                        <p>Effects of rheology and linkage composition on fermentation characteristics and microstructure of highly viscous arabinoxylan fractions in a model human colon system.</p>
-                        <p>(Colon model, fluorescence in situ hybridization (FISH), fluorescence microscopy, psyllium)</p>
-                        <p>Research group Fred Warren<a className="ml05" href="https://quadram.ac.uk/fred-warren/">https://quadram.ac.uk/fred-warren</a></p>
+                        <p className="m025">Master capstone project: Effects of rheology and linkage composition on fermentation characteristics and microstructure of highly viscous arabinoxylan fractions in a model human colon system.</p>
+                        {/* <p className="m025">(Colon model, fluorescence in situ hybridization (FISH), fluorescence microscopy, psyllium)</p> */}
+                        <p className="m025">Research group Fred Warren<a className="ml05" href="https://quadram.ac.uk/fred-warren/">https://quadram.ac.uk/fred-warren</a></p>
                     </div>
                 </Experience>
                 <Experience title="Summer Internship" place="Quadram Institute, Norwich, UK" dates="6/2019 to 8/2019">
                     <div className="role-header--description">
-                        <p>Development of a methodology to study the bacteria population in the duodenum adapting currents protocols for fluorescence in situ hybridization (FISH) and flow cytometry.</p>
-                        <p>(Fluorescence in situ hybridization (FISH), fluorescence microscopy)</p>
-                        <p><a className="ml05" href="https://quadram.ac.uk/fred-warren/">Research group Fred Warren</a></p>
+                        <p className="m025">Development of a methodology to study the bacteria population in the duodenum adapting currents protocols for fluorescence in situ hybridization (FISH) and flow cytometry.</p>
+                        {/* <p className="m025">(Fluorescence in situ hybridization (FISH), fluorescence microscopy)</p> */}
+                        <p className="m025">Research group Fred Warren<a className="ml05" href="https://quadram.ac.uk/fred-warren/">https://quadram.ac.uk/fred-warren</a></p>
                     </div>
                 </Experience>
                 <Experience title="Internship" place="Pharmacy faculty, Seville, Spain" dates="11/2017 to 09/2018">
                     <div className="role-header--description">
-                        <p>Hybrid histidine kinase on the halophile bacteria Chromohalobacter salexigens and its involvement on the cross-regulation network of ectoine metabolism.</p>
-                        <p>Research group J. Nieto and Montserrat Argandoña<a className="ml05" href="https://investigacion.us.es/sisius/sis_showpub.php?idpers=8492">https://investigacion.us.es/sisius/sis_showpub.php?idpers=8492</a></p>
-                        <p>(Cross regulation network of ectoine metabolism)</p>                   
+                        <p className="m025">Hybrid histidine kinase on the halophile bacteria Chromohalobacter salexigens and its involvement on the cross-regulation network of ectoine metabolism.</p>
+                        <p className="m025">Research group J. Nieto and Montserrat Argandoña<a className="ml05" href="https://investigacion.us.es/sisius/sis_showpub.php?idpers=8492">https://bit.ly/38xegv3</a></p>
+                        {/* <p className="m025">(Cross regulation network of ectoine metabolism)</p>                    */}
                    </div>
                 </Experience>
                 <Experience title="Degree capstone project" place="CIQUS, Santiago de Compostela, Spain" dates="10/2015 to 07/2016">
                     <div className="role-header--description">
-                        <p>Adaptation of the IC-Tagging molecular labeling system for usage on bacterial organisms applying plasmid cloning.</p>
-                        <p>Research group F. Javier Benavente and J. Manuel Martínez Costas<a className="ml05" href="https://www.usc.es/ciqus/en/groups/molecular-virology">https://www.usc.es/ciqus/en/groups/molecular-virology</a></p>
-                        <p>(Molecular Labeling)</p>
+                        <p className="m025">Degree capstone project: Adaptation of the IC-Tagging molecular labeling system for usage on bacterial organisms applying plasmid cloning.</p>
+                        <p className="m025">Research group F. Javier Benavente and J. Manuel Martínez Costas<a className="ml05" href="https://www.usc.es/ciqus/en/groups/molecular-virology">https://www.usc.es/ciqus/en/groups/molecular-virology</a></p>
+                        {/* <p className="m025">(Molecular Labeling)</p> */}
                     </div>
                 </Experience>
                 <Experience title="Internship" place="CIQUS, Santiago de Compostela, Spain" dates="02/2014 to 09/2014">
                     <div className="role-header--description">
-                        <p>Amino-acid masking through photolabile groups. Study of supramolecular chemistry of DNA-protein interactions. On the basis of the available structural information on the interaction of different families of transcription factors with dsDNA, we aimed at developing small, synthetic versions that could somewhat mimic DNA binding properties of such natural counterparts.</p>
-                        <p>Research group José Luis Mascareñas<a className="ml05" href="https://www.usc.es/ciqus/en/groups/mascare%C3%B1as-lopez-gulias">https://www.usc.es/ciqus/en/groups/mascare%C3%B1as-lopez-gulias</a></p>
-                        <p>(Amino-acid masking through photolabile groups)</p>
+                        <p className="m025">Amino-acid masking through photolabile groups. Study of supramolecular chemistry of DNA-protein interactions. On the basis of the available structural information on the interaction of different families of transcription factors with dsDNA, we aimed at developing small, synthetic versions that could somewhat mimic DNA binding properties of such natural counterparts.</p>
+                        <p className="m025">Research group José Luis Mascareñas<a className="ml05" href="https://www.usc.es/ciqus/en/groups/mascare%C3%B1as-lopez-gulias">https://bit.ly/3lkWwqs</a></p>
+                        {/* <p className="m025">(Amino-acid masking through photolabile groups)</p> */}
                     </div>
                 </Experience>
             </div>
@@ -104,17 +123,18 @@ const ColumnRight =() => {
                         <img className="icon" src="../static/mobile-phone.png" alt="phone"/><span className="contact-list__item__span">07493915259</span>                        
                     </div>
                     <div className="contact-list__item">
-                        <img className="icon" src="../static/linkedin.png" alt="linkedin"/><span className="contact-list__item__span">linkedin</span>
+                        <img className="icon" src="../static/linkedin.png" alt="linkedin"/><span className="contact-list__item__span">https://bit.ly/3pnlOXg</span>
                     </div>
             </section>
 
             <div className="column--right__skills">
                 <h2 className="section-header">Skills</h2>   
                 <ul>
-                    <li>Libero</li>
-                    <li>Adipisicing liit</li>
-                    <li>Animi sapiente</li>
-                    <li>Suscipit</li>
+                    <li>Colon model</li>
+                    <li>Fluorescence in situ hybridization (FISH)</li>
+                    <li>Fluorescence microscopy</li>
+                    <li>Molecular Labeling</li>
+                    <li>Plasmid design</li>
                 </ul>
             </div>
             <div className="column--right__language">
@@ -127,7 +147,7 @@ const ColumnRight =() => {
                 <h2 className="section-header">Hobbies</h2>
                 <div className="hobbies">
                     <div className="hobbies__item">
-                        <img className="hobbies__icon" src="../static/dance.png" alt="dance"/><span className="hobbies__icon__text">Dance</span>
+                        <img className="hobbies__icon" src="../static/dancesalsa.png" alt="dance"/><span className="hobbies__icon__text">Dance</span>
                     </div>
                     <div className="hobbies__item">
                         <img className="hobbies__icon" src="../static/open-book.png" alt="read"/><span className="hobbies__icon__text">Read</span>
@@ -151,16 +171,17 @@ const ColumnRight =() => {
 
             <div className="education">
                 <h2 className="section-header">Education</h2>
-                <Experience 
-                    title="Master in Molecular Genetis & Biotechnology: Genetics" 
-                    place="University of Seville - Seville, Spain" 
+
+                <Education 
+                    title="MSc in Molecular Genetis & Biotechnology" 
+                    place="University of Seville, Seville, Spain" 
                     dates="2020">
-                </Experience>
-                <Experience 
-                    title="Chemistry: University of Santiago de Compostela" 
-                    place="USC - Santiago de Compostela, Spain" 
+                </Education>
+                <Education 
+                    title="BSc in Chemistry" 
+                    place="USC, Santiago de Compostela, Spain" 
                     dates="2016"> 
-                </Experience>
+                </Education>
             </div>
         </div> 
     )

@@ -27,10 +27,12 @@
     &__name {
         font-size: 3rem;
         margin-bottom: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     &__title{
         margin-top: 0;
         font-weight: 400;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
@@ -94,10 +96,28 @@
         margin-bottom: 0.5rem;
     }
     &--description {
-        margin-left: 1rem;
-        margin-bottom: 2rem;
+        margin: 1rem 0 2rem 1rem;
         padding-right: 1rem;
         text-align: justify;
+    }
+}
+
+.education {       
+    &__title {
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+        margin-top: 0.75rem;
+        display: block;
+    }
+    &__date {
+        font-style: italic;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    &__place {
+        font-weight: lighter;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -165,9 +185,9 @@
     }
 }
 
-// .m0 {
-//     margin:0.25rem;
-// }
+.m025 {
+    margin:0.25rem;
+}
 
 .ml05 {
     margin-left: 0.5rem;
