@@ -37,7 +37,9 @@
 }
 
 .contact-list {
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 20rem;
     flex-basis: auto;
     flex-grow:2;
     justify-content: flex-end;
@@ -129,7 +131,7 @@
 .section-header{
     border-bottom: dotted;
     border-color: gainsboro;
-    padding-top: 1rem;
+    // padding-top: 1rem;
 }
 
 .dotbar {
