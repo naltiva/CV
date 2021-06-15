@@ -7,6 +7,18 @@ const Header = () => {
                 <h1 className="presentation__name">Noelia Pereira</h1>
                 <h2 className="presentation__title">Researcher</h2>
             </section>
+            <section className="contact-list">
+                    <div className="contact-list__item">
+                        <img className="icon" src="../static/mail.png" alt="mail"/><span className="contact-list__item__span">noeliapereira@protonmail.com</span>
+                    </div>
+                    <div className="contact-list__item">
+                        <img className="icon" src="../static/mobile-phone.png" alt="phone"/><span className="contact-list__item__span">07493915259</span>                        
+                    </div>
+                    <div className="contact-list__item">
+                        <img className="icon" src="../static/linkedin.png" alt="linkedin"/><span className="contact-list__item__span">https://bit.ly/3pnlOXg</span>
+                    </div>
+            </section>
+
         </div>
     )
 }
@@ -51,9 +63,9 @@ const Education = (props) => {
 const ColumnLeft =() => {
     return (
         <div className="column--left">
-            <section>
+            {/* <section>
                 <p className="presentation__text">My name is Noelia, I originally started with a bachelor in chemistry, by its third year I found myself focusing mainly on biochemistry and other biology related subjects, my end of bachelor project was on molecular labeling on bacterial organisms. I found this last project quite intriguing so I decided to my master’s in molecular genetics and biotechnology. Over this period I developed a keen interest in nutrition and microbiome and I managed to join Fred Warren’s group in the Quadram Institute to work on identifying how digestion affects psyllium. During the time working in Fred’s group I had a high degree of autonomy and did both experiment and protocol design, experiment runs and data analysis.</p>
-            </section>
+            </section> */}
             <div className="column--left__experience">
                 <h2 className="section-header">Experience</h2>
                 <Experience title="Researche associate" place="Quadram Institute, Norwich, UK" dates="2/2020 to 7/2020">
@@ -115,7 +127,7 @@ const DotBar = (props) => {
 const ColumnRight =() => {
     return (
         <div className="column--right">
-            <section className="contact-list">
+            {/* <section className="contact-list">
                     <div className="contact-list__item">
                         <img className="icon" src="../static/mail.png" alt="mail"/><span className="contact-list__item__span">noeliapereira@protonmail.com</span>
                     </div>
@@ -125,7 +137,7 @@ const ColumnRight =() => {
                     <div className="contact-list__item">
                         <img className="icon" src="../static/linkedin.png" alt="linkedin"/><span className="contact-list__item__span">https://bit.ly/3pnlOXg</span>
                     </div>
-            </section>
+            </section> */}
 
             <div className="column--right__skills">
                 <h2 className="section-header">Skills</h2>   
