@@ -9,13 +9,13 @@ const Header = () => {
             </section>
             <section className="contact-list">
                     <div className="contact-list__item">
-                        <img className="icon" src="../static/mail.png" alt="mail"/><span className="contact-list__item__span">noeliapereira@protonmail.com</span>
+                        <img className="icon" src="static/mail.png" alt="mail"/><span className="contact-list__item__span">noeliapereira@protonmail.com</span>
                     </div>
                     <div className="contact-list__item">
-                        <img className="icon" src="../static/mobile-phone.png" alt="phone"/><span className="contact-list__item__span">07493915259</span>                        
+                        <img className="icon" src="static/mobile-phone.png" alt="phone"/><span className="contact-list__item__span">07493915259</span>                        
                     </div>
                     <div className="contact-list__item">
-                        <img className="icon" src="../static/linkedin.png" alt="linkedin"/><span className="contact-list__item__span">https://bit.ly/3pnlOXg</span>
+                        <img className="icon" src="static/linkedin.png" alt="linkedin"/><span className="contact-list__item__span">https://bit.ly/3pnlOXg</span>
                     </div>
             </section>
 
@@ -159,24 +159,24 @@ const ColumnRight =() => {
                 <h2 className="section-header">Hobbies</h2>
                 <div className="hobbies">
                     <div className="hobbies__item">
-                        <img className="hobbies__icon" src="../static/dancesalsa.png" alt="dance"/><span className="hobbies__icon__text">Dance</span>
+                        <img className="hobbies__icon" src="static/dancesalsa.png" alt="dance"/><span className="hobbies__icon__text">Dance</span>
                     </div>
                     <div className="hobbies__item">
-                        <img className="hobbies__icon" src="../static/open-book.png" alt="read"/><span className="hobbies__icon__text">Read</span>
+                        <img className="hobbies__icon" src="static/open-book.png" alt="read"/><span className="hobbies__icon__text">Read</span>
                     </div>
                     <div className="hobbies__item">
-                        <img className="hobbies__icon" src="../static/yoga.png" alt="yoga"/><span className="hobbies__icon__text">Yoga</span>
+                        <img className="hobbies__icon" src="static/yoga.png" alt="yoga"/><span className="hobbies__icon__text">Yoga</span>
                     </div>
                 </div>
                 <div className="hobbies">
                     <div className="hobbies__item">
-                        <img className="hobbies__icon" src="../static/bake.png" alt="bake"/><span className="hobbies__icon__text">Bake</span>
+                        <img className="hobbies__icon" src="static/bake.png" alt="bake"/><span className="hobbies__icon__text">Bake</span>
                     </div>
                     <div className="hobbies__item">
-                        <img className="hobbies__icon" src="../static/climbing.png" alt="climbing"/><span className="hobbies__icon__text">Climb</span>
+                        <img className="hobbies__icon" src="static/climbing.png" alt="climbing"/><span className="hobbies__icon__text">Climb</span>
                     </div>
                     <div className="hobbies__item">
-                        <img className="hobbies__icon" src="../static/hiking.png" alt="hiking"/><span className="hobbies__icon__text">Hike</span>
+                        <img className="hobbies__icon" src="static/hiking.png" alt="hiking"/><span className="hobbies__icon__text">Hike</span>
                     </div>
                 </div>
             </div>
