@@ -9,13 +9,13 @@ const Header = () => {
             </section>
             <section className="contact-list">
                     <div className="contact-list__item">
-                        <img className="icon" src="static/mail.png" alt="mail"/><span className="contact-list__item__span">noeliapereira@protonmail.com</span>
+                        <img className="icon" src="static/mail.png" alt="mail"/><span className="contact-list__item__span"><a href="mailto:noeliapereira@protonmail.com">noeliapereira@protonmail.com</a></span>
                     </div>
                     <div className="contact-list__item">
                         <img className="icon" src="static/mobile-phone.png" alt="phone"/><span className="contact-list__item__span">07493915259</span>                        
                     </div>
                     <div className="contact-list__item">
-                        <img className="icon" src="static/linkedin.png" alt="linkedin"/><span className="contact-list__item__span">https://bit.ly/3pnlOXg</span>
+                        <img className="icon" src="static/linkedin.png" alt="linkedin"/><span className="contact-list__item__span"><a href="https://bit.ly/3pnlOXg">https://bit.ly/3pnlOXg</a></span>
                     </div>
             </section>
 
