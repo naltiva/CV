@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel  static/**/* index.html",
-    "build": "parcel build static/**/* index.html --public-url=https://naltiva.github.io/CV/dist",
+    "build": "parcel build static/**/* index.html --public-url=https://naltiva.github.io/CV",
     "clean": "rm -rf dist .cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
